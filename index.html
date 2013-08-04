@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="drupal, php, C#, software engineer, Salem" />
+  <meta name="title" content="Mike Munroe" />
+  <meta name="description" content="Personal site for Mike Munroe, software engineer." />
+  <meta name="google-site-verification" content="ltUdzcFZNVQjg2IQx9cn44h1N8y-XpaLo3cWIsCpdmk" />
+<title>Mike Munroe</title>
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/slimbox2.css" type="text/css" rel="stylesheet" />
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#maincontent').cycle({
+        fx:     'scrollHorz', // You can choose effect do you like, for reference : http://www.malsup.com/jquery/cycle/browser.html
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        pagerAnchorBuilder: function(idx, slide) {
+            // return sel string for existing anchor
+            return '#nav li:eq(' + (idx) + ') a';
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+   $(function(){     
+        $('#work').cycle({
+            timeout: 0,  // milliseconds between slide transitions (0 to disable auto advance)			
+            fx:      'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+			next: 	 '#next',
+			prev:    '#prev'			    
+        });				         
+     });
+</script>
+
+<script type="text/javascript" src="js/slimbox2.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<!--[if IE 6]>
+    <script type="text/javascript" src="js/dd_belated_png.js"></script>
+	<script>DD_belatedPNG.fix('#bg-content-repeat1, #bg-content-repeat2, #bg-content-top, #bg-content-bottom');</script>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2053424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<div id="container">
+	<div id="content">
+		<div id="bg-content-top"></div><!-- end bg-content-top -->
+		<div id="bg-content-repeat1">
+		<div id="bg-content-repeat2">
+			<div id="main">
+				<div id="top">
+					<div id="logo"><img src="images/logo.gif" alt="" /></div><!-- end logo -->
+					<div id="navtop">
+						<ul id="nav">
+							<li class="nav1"><a href="#" title="homepage"></a></li>
+							<li class="nav2"><a href="#" title="about"></a></li>
+							<li class="nav4"><a href="#" title="social network"></a></li>
+							<li class="nav5"><a href="#" title="contact"></a></li>
+						</ul>
+					</div><!-- end nav -->
+					<div class="clr"></div><!-- clear float -->
+				</div><!-- end top -->
+				<div id="maincontent">
+					<div class="page"><!-- HOMEPAGE -->
+					<h1>Welcome</h1>
+					<p>I spend my days working as a software engineer at <a href="http://thomsonreuters.com/">Thomson Reuters</a>, within the Markets Fixed Income group in Boston.  At Thomson Reuters, I have had the luxury of working with a few different technologies and products.  Currently, I am working on a web based product that we rewrote using the <a href="http://drupal.org/drupal-6.0">Drupal 6.0 framework</a>.  Past work at TR has been done within the <a href="http://www.microsoft.com/NET/">.NET stack</a>, specifically <a href="http://msdn.microsoft.com/en-us/vcsharp/default.aspx">C#</a>, but I also had the chance to do some UI work in <a href="http://www.adobe.com/products/flex/">Flex</a> and <a href="http://www.adobe.com/devnet/flex/samples/dashboard.html">Flex Charting</a>, as well.</p>
+                    <p>Below is a list of technologies I am proficient in:</p>
+                    <ul class="l1">
+                        <li>PHP & Drupal 6</li>
+                        <li>C#</li>
+                        <li>MySQL</li>
+                        <li>SQL Server</li>
+                    </ul>
+
+					</div><!-- END HOMEPAGE -->
+					<div class="page"><!-- ABOUT US PAGE -->
+						<h1>About Me</h1>
+                        <p>Before Thomson Reuters, I had the pleasure of working with a great software team at Onfolio, a small startup out of Cambridge, MA, that was acquired by <a href="http://www.microsoft.com/en/us/default.aspx">Microsoft.</a></p>
+                        <p>At Microsoft, I worked alongside the same group, as an SDET, on <a href="http://explore.live.com/windows-live-writer?os=other">Windows Live Writer</a>, a product born at Onfolio.</p>
+                        <p>The journey before Onfolio, included work at a few different startups, most of which were short stints because the business plans didn&#39;t pan out. The first one was Visible Markets, where I met a lot of great people, some, that I have had to pleasure of working with at multiple jobs and still work with today.</p>
+                        <p>When I am not at work, I try to stay in shape riding my <a href="http://www.cervelo.com/en_us/bikes/2010/RS/?bike=RS&year=2010">Cervelo RS</a> and playing basketball.</p>
+					</div><!-- END ABOUT US PAGE -->
+					<div class="page"><!-- SOCIAL PAGE -->
+						<h1>Social Network</h1>
+							 <ul class="social">
+							   <li><img src="images/linkedin.png" alt="" class="imgleft" /><span class="t1">LinkedIn</span><br />
+							    <a href="http://www.linkedin.com/in/mikemunroe">www.linkedin.com/in/mikemunroe</a></li>
+								<li><img src="images/twitter.png" alt="" class="imgleft" /><span class="t1">twitter</span><br />
+							    <a href="http://www.twitter.com/mikepmunroe">www.twitter.com/mikepmunroe</a></li>
+								<li><img src="images/delicious.png" alt="" class="imgleft" /><span class="t1">delicious</span><br />
+							    <a href="http://www.delicious.com/mikepmunroe">www.delicious.com/mikepmunroe</a></li>
+							 </ul>
+					</div><!-- END SOCIAL PAGE -->
+					<div class="page"><!-- CONTACT US PAGE -->
+						<h1>Contact Me</h1>
+						<div id="left-content">
+							<div id="contact_form">
+							  <form id="contact" action="">
+								<fieldset>
+								  <label for="name" id="name_label">Name</label><br />
+								  <input type="text" name="name" id="name" size="30" value="" class="text-input" />
+								  <span class="error" id="name_error">Please enter name !</span><br />
+								 <label for="email" id="email_label">Email</label><br />
+								  <input type="text" name="email" id="email" size="30" value="" class="text-input" />
+								  <span class="error" id="email_error">Please enter email address !</span>
+								  <span class="error" id="email_error2">Please enter valid email address !</span><br />
+								  <label for="msg" id="msg_label">Your Message</label><br />
+								 <textarea cols="25" rows="5" name="msg" id="msg" class="text-input"></textarea>
+								  <span class="error" id="msg_error">Please enter message !</span>
+								  <input type="submit" name="submit" class="button" id="submit_btn" value="send..."/>
+								</fieldset>
+							  </form>
+							  </div><!-- end contact_form -->
+						  </div><!-- end left-content -->
+						  <div id="right-content">
+						</div><!-- end right-content -->
+					</div><!-- END CONTACT US PAGE -->
+				</div><!-- end maincontent -->
+			</div><!-- end main -->
+		</div><!-- end bg-content-repeat2 -->
+		</div><!-- end bg-content-repeat1 -->
+		<div id="bg-content-bottom"></div><!-- end bg-content-bottom -->
+	</div><!-- end content -->
+	<div id="glowbottom"></div><!-- end glowbottom -->
+</div>
+<!-- end container -->
+
+<!-- Start of HubSpot Logging Code  -->
+<script type="text/javascript" language="javascript">
+var hs_portalid=174866; 
+var hs_salog_version = "2.00";
+var hs_ppa = "mikemunroe.app12.hubspot.com";
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- End of HubSpot Logging Code -->
+
+</body>
+</html>
